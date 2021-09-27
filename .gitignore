@@ -1,0 +1,5 @@
+# Mac OS junk files
+.DS_Store
+
+# PyCharm files.
+.idea
