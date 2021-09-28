@@ -1,11 +1,11 @@
 # Python std
-import yaml
 import os
-import logging
+import yaml
 import shutil
+import logging
 
-# 3dsr
-import jblib.file_sys as jbfs
+# Project files
+from . import file_sys as jbfs
 
 
 def get_vis_path():
