@@ -1,10 +1,10 @@
 # Python std.
+import re
 import os
-import datetime
-import logging
 import random
 import string
-import re
+import logging
+import datetime
 
 
 def ls(path, exts=None, pattern_incl=None, pattern_excl=None,

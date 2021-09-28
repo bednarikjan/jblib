@@ -5,7 +5,7 @@ from scipy import sparse
 from scipy.sparse import linalg as spla
 
 # project files
-import jblib.img as jbim
+from . import img as jbim
 
 
 # Supported coordinate frames.

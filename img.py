@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 
 # 3dsr
-import jblib.file_sys as jbfs
+from . import file_sys as jbfs
 
 
 img_dtypes = {

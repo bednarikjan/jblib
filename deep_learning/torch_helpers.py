@@ -10,9 +10,9 @@ from collections import OrderedDict
 import shutil
 
 # project files
-import jblib.file_sys as jbfs
-import jblib.vis3d as jbv3
-import jblib.depth as jbd
+from .. import file_sys as jbfs
+from .. import vis3d as jbv3
+from .. import depth as jbd
 
 
 class TrainStateSaver:
@@ -458,7 +458,7 @@ class RunningLoss:
 ################################################################################
 ### Tests
 if __name__ == '__main__':
-    import jblib.unit_test as jbut
+    from .. import unit_test as jbut
 
     ############################################################################
     ### Test PcloudsCmpVisualizer - clrs
@@ -490,7 +490,7 @@ if __name__ == '__main__':
     ############################################################################
     ### Test DmapsCmpVisualizer
     jbut.next_test('DmapsCmpVisualizer')
-    import jblib.file_sys as jbfs
+    from .. import file_sys as jbfs
     import matplotlib.pyplot as plt
 
     num_imgs = 2

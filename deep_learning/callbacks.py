@@ -4,10 +4,10 @@ import abc
 from abc import abstractmethod
 
 # 3dsr
-import jblib.file_sys as jbfs
-import jblib.vis2d as jbv2
-import jblib.normals as jbn
-import jblib.img as jbim
+from .. import file_sys as jbfs
+from .. import vis2d as jbv2
+from .. import normals as jbn
+from .. import img as jbim
 
 # 3rd party
 import numpy as np

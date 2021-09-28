@@ -1,11 +1,10 @@
-# Python std. libs.
+# Python std.
 import abc
 from abc import abstractmethod
 import logging
 import threading
 import multiprocessing
 import time
-
 try:
     import queue
 except ImportError:
@@ -14,10 +13,10 @@ except ImportError:
 # 3rd party
 import numpy as np
 
-# 3dsr
-import jblib.img as jbim
-import jblib.file_sys as jbfs
-import jblib.helpers as jbh
+# Project files.
+from . import img as jbim
+from . import file_sys as jbfs
+from . import helpers as jbh
 
 
 logger = logging.getLogger('logger')

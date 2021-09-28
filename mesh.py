@@ -19,8 +19,8 @@ except ImportError:
     pass
 
 # project files
-import jblib.file_sys as jbfs
-import jblib.unit_test as jbut
+from . import file_sys as jbfs
+from . import unit_test as jbut
 
 # Python std
 import logging
@@ -940,7 +940,7 @@ if __name__ == '__main__':
     if 'bpy' in sys.modules:
         jbut.next_test('Pcloud2Dmap - get_dmap()')
 
-        import jblib.depth as jbd
+        from . import depth as jbd
         import matplotlib.pyplot as plt
 
         path_dmap_img = 'tests/mesh_test/renders/dmap.png'

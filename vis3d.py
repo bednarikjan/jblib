@@ -27,9 +27,9 @@ except:
     pass
 
 # project files
-import jblib.file_sys as jbfs
-import jblib.helpers as jbh
-import jblib.unit_test as jbut
+from . import file_sys as jbfs
+from . import helpers as jbh
+from . import unit_test as jbut
 
 # Color defines for plotly
 RED = 'rgb(250, 50, 50)'
@@ -471,11 +471,11 @@ def visualizeMeshesAndPointClouds(meshes, simplices, pointClouds,
 
     # Display
     if plotMode == 'web':
-        plotly.offline.plot(fig0, filename='/tmp/temp-plot.html', **kwargs)
+        offline.plot(fig0, filename='/tmp/temp-plot.html', **kwargs)
     elif plotMode == 'jupyter':
-        iplot(fig0, **kwargs)
+        offline.iplot(fig0, **kwargs)
     elif plotMode == 'divstr':
-        return plotly.offline.plot(fig0, output_type='div', **kwargs)
+        return offline.plot(fig0, output_type='div', **kwargs)
     else:
         raise Exception('Unknonw plot mode "{}". Must be one of ("web", "divstr").'.
                         format(plotMode))

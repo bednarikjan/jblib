@@ -2,7 +2,7 @@
 import numpy as np
 
 # project files
-import jblib.math_utils as jbmath
+from . import math_utils as jbmath
 
 
 def get_mask(dmaps, fgrd=True):

@@ -5,7 +5,7 @@
 import tensorflow as tf
 
 # jblib
-import jblib.file_sys as jbfs
+from .. import file_sys as jbfs
 
 # Pyhon
 import logging
